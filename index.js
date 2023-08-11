@@ -82,6 +82,17 @@ function doubleNumbers(num) {
 
 console.log(doubleNumbers(numbers));
 
+// topic 6
+class MathUtility {
+  static multiply(a, b) {
+      return a * b;
+  }
+}
+
+console.log(MathUtility.multiply(5, 3)); 
+console.log(MathUtility.multiply(2, 8));
+
+// topic 7
 
 
 
