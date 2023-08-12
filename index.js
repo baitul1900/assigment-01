@@ -94,6 +94,60 @@ console.log(MathUtility.multiply(2, 8));
 
 // topic 7
 
+class Animal {
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+
+  makeSound() {
+    console.log(this.sound);
+  }
+}
+class Dog extends Animal {
+  fetch() {
+    console.log("Fetching the ball!");
+  }
+}
+
+const animal = new Animal("Lion", "Roar");
+animal.makeSound();
+
+const dog = new Dog("Buddy", "Woof");
+dog.makeSound(); 
+dog.fetch(); 
+
+// topic 8
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  introduce() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+class Student extends Person {
+  constructor(name, age, major) {
+    super(name, age);
+    this.major = major;
+  }
+
+  introduce() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old. I am majoring in ${this.major}.`);
+  }
+}
+
+const person1 = new Person("John", 30);
+person1.introduce(); 
+
+const student1 = new Student("Alice", 20, "Computer Science");
+student1.introduce(); 
+
+
+
 
 
 
